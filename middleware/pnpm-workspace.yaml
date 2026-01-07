@@ -1,0 +1,6 @@
+ignoredBuiltDependencies:
+  - "@scarf/scarf"
+
+onlyBuiltDependencies:
+  - esbuild
+  - "@sphereon/pex"

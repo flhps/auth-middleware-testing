@@ -1,0 +1,36 @@
+{
+	"version": 2,
+	"description": "Policy accepting any verifiable credential. This is just for tests.",
+	"query": {
+		"credentials": [
+			{
+				"id": "cred_whatever",
+				"format": "ldp_vc",
+				"meta": {
+					"type_values": [["VerifiableCredential"]]
+				},
+				"claims": [
+					{ "id": "claim_subject", "path": ["credentialSubject"] },
+					{ "id": "claim_issuer", "path": ["issuer"] }
+				],
+				"require_cryptographic_holder_binding": false
+			}
+		]
+	},
+	"mappings": [
+		{
+			"claim": {
+				"credentialQuery": "cred_whatever",
+				"claimQuery": "claim_subject"
+			},
+			"out": ["subject"]
+		},
+		{
+			"claim": {
+				"credentialQuery": "cred_whatever",
+				"claimQuery": "claim_issuer"
+			},
+			"out": ["issuer"]
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"version": 2,
+	"description": "Policy accepting any EmployeeCredential. Enforces a holder binding and some more tests.",
+	"query": {
+		"credentials": [
+			{
+				"id": "cred_employee",
+				"format": "ldp_vc",
+				"meta": {
+					"type_values": [["EmployeeCredential"]]
+				},
+				"claims": [
+					{
+						"id": "claim_company",
+						"path": ["credentialSubject", "hasLegallyBindingName"]
+					},
+					{ "id": "claim_name", "path": ["credentialSubject", "name"] },
+					{ "id": "claim_title", "path": ["credentialSubject", "title"] },
+					{
+						"id": "claim_juris",
+						"path": ["credentialSubject", "hasJurisdiction"]
+					},
+					{ "id": "claim_email", "path": ["credentialSubject", "email"] },
+					{ "id": "claim_id", "path": ["credentialSubject", "id"] }
+				],
+				"require_cryptographic_holder_binding": false
+			}
+		]
+	},
+	"mappings": [
+		{
+			"claim": {
+				"credentialQuery": "cred_employee",
+				"claimQuery": "claim_company"
+			},
+			"out": ["company"]
+		},
+		{
+			"claim": {
+				"credentialQuery": "cred_employee",
+				"claimQuery": "claim_name"
+			},
+			"out": ["name"]
+		},
+		{
+			"claim": {
+				"credentialQuery": "cred_employee",
+				"claimQuery": "claim_email"
+			},
+			"out": ["email"]
+		}
+	],
+	"constraint": {
+		"op": "and",
+		"clauses": [
+			{
+				"op": "equalsDID",
+				"a": ["proof", "verificationMethod"],
+				"b": {
+					"credentialQuery": "cred_employee",
+					"claimQuery": "claim_id"
+				}
+			},
+			{
+				"op": "matches",
+				"a": {
+					"credentialQuery": "cred_employee",
+					"claimQuery": "claim_email"
+				},
+				"b": "@test\\.com$"
+			},
+			{
+				"op": "or",
+				"clauses": [
+					{
+						"op": "matches",
+						"a": {
+							"credentialQuery": "cred_employee",
+							"claimQuery": "claim_title"
+						},
+						"b": "^C[ETO]O$"
+					},
+					{
+						"op": "equals",
+						"a": {
+							"credentialQuery": "cred_employee",
+							"claimQuery": "claim_juris"
+						},
+						"b": "GER"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"version": 2,
+	"description": "Policy accepting a verified email credential from Altme.",
+	"query": {
+		"credentials": [
+			{
+				"id": "cred_email",
+				"format": "ldp_vc",
+				"meta": {
+					"type_values": [["EmailPass"]]
+				},
+				"claims": [
+					{ "id": "claim_email", "path": ["credentialSubject", "email"] },
+					{ "id": "claim_issuer", "path": ["issuer"] }
+				],
+				"require_cryptographic_holder_binding": false
+			}
+		]
+	},
+	"mappings": [
+		{
+			"claim": {
+				"credentialQuery": "cred_email",
+				"claimQuery": "claim_email"
+			},
+			"out": ["email"]
+		},
+		{
+			"claim": {
+				"static": "vc"
+			},
+			"out": ["auth_method"]
+		}
+	],
+	"constraint": {
+		"op": "equals",
+		"a": {
+			"credentialQuery": "cred_email",
+			"claimQuery": "claim_issuer"
+		},
+		"b": "did:web:app.altme.io:issuer"
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "middleware-load-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test:load": "k6 run loadTest.ts --summary-mode full 2>&1 | tee >(awk '{ if ($0 ~ /  █ TOTAL RESULTS /) start=1; if (start) print }' > summary.txt)"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "openid-client": "^5.6.5",
+    "passport": "^0.5.2"
+  }
+}

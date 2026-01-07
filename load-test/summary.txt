@@ -1,0 +1,575 @@
+  █ TOTAL RESULTS 
+
+    checks_total.......: 130972 70.025128/s
+    checks_succeeded...: 98.95% 129601 out of 130972
+    checks_failed......: 1.04%  1371 out of 130972
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+    ✓ Get client page status is 200
+    ✗ Get auth page status is 200
+      ↳  98% — ✓ 23833 / ✗ 415
+    ✗ Get presentation request status is 200
+      ↳  98% — ✓ 11545 / ✗ 164
+    ✗ Get metadata status is 200
+      ↳  99% — ✓ 11448 / ✗ 97
+    ✗ Post presentation status is 200
+      ↳  99% — ✓ 11402 / ✗ 46
+    ✗ Get continue link status is 200
+      ↳  94% — ✓ 10753 / ✗ 649
+
+    CUSTOM
+    flow_duration..................: avg=109.121569 min=0.40715  med=13.686548 max=1117.48147 p(90)=324.960677 p(95)=357.966975
+
+    HTTP
+    http_req_blocked...............: avg=14.61µs    min=1.03µs   med=2.72µs    max=12.13ms    p(90)=6.19µs     p(95)=151.91µs  
+    http_req_connecting............: avg=8.38µs     min=0s       med=0s        max=12.08ms    p(90)=0s         p(95)=107.18µs  
+    http_req_duration..............: avg=25.34ms    min=253.5µs  med=1.45ms    max=1.09s      p(90)=71.87ms    p(95)=260.23ms  
+      { expected_response:true }...: avg=25.49ms    min=253.5µs  med=1.45ms    max=1.09s      p(90)=72.11ms    p(95)=260.4ms   
+    http_req_failed................: 0.76%  1611 out of 209499
+    http_req_receiving.............: avg=62.13µs    min=14.21µs  med=53.64µs   max=6.57ms     p(90)=95.46µs    p(95)=113.54µs  
+    http_req_sending...............: avg=15.94µs    min=3.53µs   med=11.39µs   max=8.37ms     p(90)=32.96µs    p(95)=38.55µs   
+    http_req_tls_handshaking.......: avg=0s         min=0s       med=0s        max=0s         p(90)=0s         p(95)=0s        
+    http_req_waiting...............: avg=25.26ms    min=224.7µs  med=1.37ms    max=1.09s      p(90)=71.78ms    p(95)=260.16ms  
+    http_reqs......................: 209499 112.010157/s
+
+    EXECUTION
+    iteration_duration.............: avg=146.64ms   min=484.78µs med=15.85ms   max=1.47s      p(90)=448.13ms   p(95)=513.16ms  
+    iterations.....................: 36372  19.446553/s
+    vus............................: 11     min=0              max=40 
+    vus_max........................: 280    min=280            max=280
+
+    NETWORK
+    data_received..................: 611 MB 327 kB/s
+    data_sent......................: 325 MB 174 kB/s
+
+
+  █ SCENARIO: auth_1 
+
+    checks_total.......: 726     0.388161/s
+    checks_succeeded...: 100.00% 726 out of 726
+    checks_failed......: 0.00%   0 out of 726
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+    ✓ Get presentation request status is 200
+    ✓ Get metadata status is 200
+    ✓ Post presentation status is 200
+    ✓ Get continue link status is 200
+
+    CUSTOM
+    flow_duration..............: avg=293.015497 min=276.055991 med=279.306177 max=1117.48147 p(90)=291.526271 p(95)=302.06819
+
+    HTTP
+    http_req_blocked...........: avg=27.54µs    min=1.2µs      med=2.72µs     max=300.79µs   p(90)=138.88µs   p(95)=176.83µs 
+    http_req_connecting........: avg=18.18µs    min=0s         med=0s         max=178.9µs    p(90)=100.67µs   p(95)=127.29µs 
+    http_req_duration..........: avg=30.54ms    min=332.48µs   med=1.57ms     max=1.09s      p(90)=72.53ms    p(95)=261.81ms 
+    http_req_failed............: 0.00%  0 out of 1573
+    http_req_receiving.........: avg=59.26µs    min=17.59µs    med=53.13µs    max=1.28ms     p(90)=93.38µs    p(95)=112.1µs  
+    http_req_sending...........: avg=17.17µs    min=4.83µs     med=11.25µs    max=176.78µs   p(90)=33.47µs    p(95)=38.06µs  
+    http_req_tls_handshaking...: avg=0s         min=0s         med=0s         max=0s         p(90)=0s         p(95)=0s       
+    http_req_waiting...........: avg=30.46ms    min=303.93µs   med=1.52ms     max=1.09s      p(90)=72.44ms    p(95)=261.75ms 
+    http_reqs..................: 1573   0.841016/s
+
+    EXECUTION
+    iteration_duration.........: avg=398.6ms    min=362.09ms   med=380.92ms   max=1.47s      p(90)=405.41ms   p(95)=409.08ms 
+    iterations.................: 121    0.064694/s
+
+    NETWORK
+    data_received..............: 4.3 MB 2.3 kB/s
+    data_sent..................: 3.1 MB 1.7 kB/s
+
+
+  █ SCENARIO: auth_10 
+
+    checks_total.......: 7206    3.85274/s
+    checks_succeeded...: 100.00% 7206 out of 7206
+    checks_failed......: 0.00%   0 out of 7206
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+    ✓ Get presentation request status is 200
+    ✓ Get metadata status is 200
+    ✓ Post presentation status is 200
+    ✓ Get continue link status is 200
+
+    CUSTOM
+    flow_duration..............: avg=291.216089 min=271.8585 med=278.954774 max=823.846397 p(90)=296.535913 p(95)=319.551757
+
+    HTTP
+    http_req_blocked...........: avg=16.33µs    min=1.09µs   med=2.65µs     max=5.08ms     p(90)=6.97µs     p(95)=154.8µs   
+    http_req_connecting........: avg=9.66µs     min=0s       med=0s         max=4.91ms     p(90)=0s         p(95)=108.44µs  
+    http_req_duration..........: avg=29.79ms    min=290.92µs med=1.59ms     max=806.52ms   p(90)=71.95ms    p(95)=260.52ms  
+    http_req_failed............: 0.00% 0 out of 15613
+    http_req_receiving.........: avg=63.42µs    min=17.19µs  med=55.75µs    max=6.45ms     p(90)=97.84µs    p(95)=113.04µs  
+    http_req_sending...........: avg=16.2µs     min=3.94µs   med=11.39µs    max=568µs      p(90)=32.99µs    p(95)=37.51µs   
+    http_req_tls_handshaking...: avg=0s         min=0s       med=0s         max=0s         p(90)=0s         p(95)=0s        
+    http_req_waiting...........: avg=29.71ms    min=256.79µs med=1.51ms     max=806.48ms   p(90)=71.85ms    p(95)=260.45ms  
+    http_reqs..................: 15613 8.347604/s
+
+    EXECUTION
+    iteration_duration.........: avg=388.72ms   min=360.02ms med=372.95ms   max=941.16ms   p(90)=408.87ms   p(95)=424.72ms  
+    iterations.................: 1201  0.642123/s
+
+    NETWORK
+    data_received..............: 43 MB 23 kB/s
+    data_sent..................: 31 MB 17 kB/s
+
+
+  █ SCENARIO: auth_20 
+
+    checks_total.......: 14406   7.702272/s
+    checks_succeeded...: 100.00% 14406 out of 14406
+    checks_failed......: 0.00%   0 out of 14406
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+    ✓ Get presentation request status is 200
+    ✓ Get metadata status is 200
+    ✓ Post presentation status is 200
+    ✓ Get continue link status is 200
+
+    CUSTOM
+    flow_duration..............: avg=295.050044 min=272.995293 med=279.192547 max=947.284873 p(90)=317.247322 p(95)=324.930699
+
+    HTTP
+    http_req_blocked...........: avg=16.69µs    min=1.05µs     med=2.69µs     max=1.08ms     p(90)=6.66µs     p(95)=158.8µs   
+    http_req_connecting........: avg=9.9µs      min=0s         med=0s         max=1.03ms     p(90)=0s         p(95)=111.28µs  
+    http_req_duration..........: avg=30.49ms    min=280.82µs   med=1.72ms     max=931.93ms   p(90)=75.9ms     p(95)=261.08ms  
+    http_req_failed............: 0.00% 0 out of 31213
+    http_req_receiving.........: avg=64.46µs    min=16.25µs    med=56.9µs     max=6.57ms     p(90)=100.14µs   p(95)=118.71µs  
+    http_req_sending...........: avg=17.06µs    min=4.12µs     med=11.87µs    max=1.63ms     p(90)=34.4µs     p(95)=39.43µs   
+    http_req_tls_handshaking...: avg=0s         min=0s         med=0s         max=0s         p(90)=0s         p(95)=0s        
+    http_req_waiting...........: avg=30.41ms    min=250.36µs   med=1.65ms     max=931.88ms   p(90)=75.78ms    p(95)=261.01ms  
+    http_reqs..................: 31213 16.688256/s
+
+    EXECUTION
+    iteration_duration.........: avg=397.9ms    min=364.03ms   med=380.23ms   max=1.06s      p(90)=422.95ms   p(95)=437.17ms  
+    iterations.................: 2401  1.283712/s
+
+    NETWORK
+    data_received..............: 86 MB 46 kB/s
+    data_sent..................: 62 MB 33 kB/s
+
+
+  █ SCENARIO: auth_30 
+
+    checks_total.......: 21606   11.551804/s
+    checks_succeeded...: 100.00% 21606 out of 21606
+    checks_failed......: 0.00%   0 out of 21606
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+    ✓ Get presentation request status is 200
+    ✓ Get metadata status is 200
+    ✓ Post presentation status is 200
+    ✓ Get continue link status is 200
+
+    CUSTOM
+    flow_duration..............: avg=304.621705 min=279.163387 med=293.488458 max=897.123419 p(90)=319.408201 p(95)=328.393479
+
+    HTTP
+    http_req_blocked...........: avg=17.67µs    min=1.13µs     med=2.74µs     max=4.62ms     p(90)=6.98µs     p(95)=163.51µs  
+    http_req_connecting........: avg=10.55µs    min=0s         med=0s         max=4.53ms     p(90)=0s         p(95)=114.41µs  
+    http_req_duration..........: avg=32.47ms    min=274.52µs   med=4.04ms     max=874.91ms   p(90)=79.85ms    p(95)=270.49ms  
+    http_req_failed............: 0.00%  0 out of 46813
+    http_req_receiving.........: avg=67.86µs    min=14.67µs    med=58.82µs    max=4.53ms     p(90)=103.94µs   p(95)=123.65µs  
+    http_req_sending...........: avg=18.23µs    min=3.88µs     med=12.2µs     max=4.91ms     p(90)=36.09µs    p(95)=41.26µs   
+    http_req_tls_handshaking...: avg=0s         min=0s         med=0s         max=0s         p(90)=0s         p(95)=0s        
+    http_req_waiting...........: avg=32.39ms    min=245.21µs   med=3.95ms     max=874.86ms   p(90)=79.75ms    p(95)=270.43ms  
+    http_reqs..................: 46813  25.028909/s
+
+    EXECUTION
+    iteration_duration.........: avg=423.73ms   min=373.91ms   med=412.51ms   max=1.05s      p(90)=446.62ms   p(95)=467.59ms  
+    iterations.................: 3601   1.925301/s
+
+    NETWORK
+    data_received..............: 129 MB 69 kB/s
+    data_sent..................: 92 MB  49 kB/s
+
+
+  █ SCENARIO: auth_40 
+
+    checks_total.......: 26408  14.119228/s
+    checks_succeeded...: 94.80% 25037 out of 26408
+    checks_failed......: 5.19%  1371 out of 26408
+
+    ✓ Get client page status is 200
+    ✗ Get auth page status is 200
+      ↳  91% — ✓ 4385 / ✗ 415
+    ✗ Get presentation request status is 200
+      ↳  96% — ✓ 4221 / ✗ 164
+    ✗ Get metadata status is 200
+      ↳  97% — ✓ 4124 / ✗ 97
+    ✗ Post presentation status is 200
+      ↳  98% — ✓ 4078 / ✗ 46
+    ✗ Get continue link status is 200
+      ↳  84% — ✓ 3429 / ✗ 649
+
+    CUSTOM
+    flow_duration..............: avg=363.42019 min=40.369555 med=348.158634 max=1036.783937 p(90)=441.444154 p(95)=583.721364
+
+    HTTP
+    http_req_blocked...........: avg=15.88µs   min=1.07µs    med=2.74µs     max=2.49ms      p(90)=5.93µs     p(95)=160.66µs  
+    http_req_connecting........: avg=9.3µs     min=0s        med=0s         max=2.18ms      p(90)=0s         p(95)=112.79µs  
+    http_req_duration..........: avg=39.51ms   min=277.98µs  med=8.59ms     max=911.27ms    p(90)=84.02ms    p(95)=291.78ms  
+    http_req_failed............: 3.00%  1611 out of 53667
+    http_req_receiving.........: avg=65.59µs   min=14.21µs   med=55.98µs    max=6.23ms      p(90)=101.84µs   p(95)=119.76µs  
+    http_req_sending...........: avg=17.55µs   min=3.53µs    med=12µs       max=3.54ms      p(90)=35.58µs    p(95)=41.02µs   
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s         max=0s          p(90)=0s         p(95)=0s        
+    http_req_waiting...........: avg=39.43ms   min=244.4µs   med=8.52ms     max=911.24ms    p(90)=83.94ms    p(95)=291.72ms  
+    http_reqs..................: 53667  28.69345/s
+
+    EXECUTION
+    iteration_duration.........: avg=443.13ms  min=2.72ms    med=487ms      max=1.4s        p(90)=589.14ms   p(95)=753.76ms  
+    iterations.................: 4800   2.566355/s
+
+    NETWORK
+    data_received..............: 147 MB 79 kB/s
+    data_sent..................: 98 MB  52 kB/s
+
+
+  █ SCENARIO: generateChallenge_1 
+
+    checks_total.......: 242     0.129387/s
+    checks_succeeded...: 100.00% 242 out of 242
+    checks_failed......: 0.00%   0 out of 242
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+
+    CUSTOM
+    flow_duration..............: avg=17.190545 min=13.543138 med=15.300867 max=178.636196 p(90)=17.839397 p(95)=19.927326
+
+    HTTP
+    http_req_blocked...........: avg=95.65µs   min=1.26µs    med=115.49µs  max=480.71µs   p(90)=211.26µs  p(95)=233.82µs 
+    http_req_connecting........: avg=67.88µs   min=0s        med=81.5µs    max=393.8µs    p(90)=151.32µs  p(95)=165.73µs 
+    http_req_duration..........: avg=4.84ms    min=388.61µs  med=1.25ms    max=167.16ms   p(90)=14.57ms   p(95)=15.34ms  
+    http_req_failed............: 0.00%  0 out of 484
+    http_req_receiving.........: avg=69.15µs   min=19.77µs   med=56.61µs   max=1.09ms     p(90)=93.53µs   p(95)=128.57µs 
+    http_req_sending...........: avg=23.35µs   min=4.53µs    med=26.06µs   max=123.55µs   p(90)=42.71µs   p(95)=47.92µs  
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s        max=0s         p(90)=0s        p(95)=0s       
+    http_req_waiting...........: avg=4.74ms    min=355.66µs  med=1.19ms    max=166.03ms   p(90)=14.45ms   p(95)=15.23ms  
+    http_reqs..................: 484    0.258774/s
+
+    EXECUTION
+    iteration_duration.........: avg=20.09ms   min=15.94ms   med=18.29ms   max=186.46ms   p(90)=20.75ms   p(95)=22.27ms  
+    iterations.................: 121    0.064694/s
+
+    NETWORK
+    data_received..............: 1.8 MB 983 B/s
+    data_sent..................: 376 kB 201 B/s
+
+
+  █ SCENARIO: generateChallenge_10 
+
+    checks_total.......: 2402    1.284247/s
+    checks_succeeded...: 100.00% 2402 out of 2402
+    checks_failed......: 0.00%   0 out of 2402
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+
+    CUSTOM
+    flow_duration..............: avg=14.683833 min=12.785348 med=14.455868 max=23.110155 p(90)=16.092077 p(95)=16.847037
+
+    HTTP
+    http_req_blocked...........: avg=7.63µs    min=1.21µs    med=2.53µs    max=497.47µs  p(90)=5.86µs    p(95)=8.32µs   
+    http_req_connecting........: avg=3.15µs    min=0s        med=0s        max=391.6µs   p(90)=0s        p(95)=0s       
+    http_req_duration..........: avg=4.18ms    min=334.41µs  med=1.22ms    max=24.81ms   p(90)=13.84ms   p(95)=14.49ms  
+    http_req_failed............: 0.00%  0 out of 4804
+    http_req_receiving.........: avg=59.21µs   min=18.14µs   med=48.16µs   max=2.05ms    p(90)=88.77µs   p(95)=103.59µs 
+    http_req_sending...........: avg=11.44µs   min=4.3µs     med=8.8µs     max=99.77µs   p(90)=17.83µs   p(95)=23.48µs  
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s        max=0s        p(90)=0s        p(95)=0s       
+    http_req_waiting...........: avg=4.11ms    min=300.12µs  med=1.16ms    max=24.71ms   p(90)=13.74ms   p(95)=14.4ms   
+    http_reqs..................: 4804   2.568493/s
+
+    EXECUTION
+    iteration_duration.........: avg=17.12ms   min=14.71ms   med=16.84ms   max=44.07ms   p(90)=18.8ms    p(95)=19.46ms  
+    iterations.................: 1201   0.642123/s
+
+    NETWORK
+    data_received..............: 18 MB  9.8 kB/s
+    data_sent..................: 3.7 MB 2.0 kB/s
+
+
+  █ SCENARIO: generateChallenge_20 
+
+    checks_total.......: 4800    2.566355/s
+    checks_succeeded...: 100.00% 4800 out of 4800
+    checks_failed......: 0.00%   0 out of 4800
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+
+    CUSTOM
+    flow_duration..............: avg=14.627366 min=12.342368 med=14.321397 max=21.498546 p(90)=16.564614 p(95)=17.275693
+
+    HTTP
+    http_req_blocked...........: avg=8.37µs    min=1.1µs     med=2.66µs    max=9.07ms    p(90)=5.92µs    p(95)=8.35µs   
+    http_req_connecting........: avg=3.96µs    min=0s        med=0s        max=9.01ms    p(90)=0s        p(95)=0s       
+    http_req_duration..........: avg=4.17ms    min=305.31µs  med=1.21ms    max=20.79ms   p(90)=13.9ms    p(95)=14.96ms  
+    http_req_failed............: 0.00%  0 out of 9600
+    http_req_receiving.........: avg=59.79µs   min=16.14µs   med=50.44µs   max=6.13ms    p(90)=89.77µs   p(95)=102.39µs 
+    http_req_sending...........: avg=11.84µs   min=4.11µs    med=9.27µs    max=369.9µs   p(90)=18.69µs   p(95)=24.08µs  
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s        max=0s        p(90)=0s        p(95)=0s       
+    http_req_waiting...........: avg=4.1ms     min=272.38µs  med=1.16ms    max=20.73ms   p(90)=13.8ms    p(95)=14.86ms  
+    http_reqs..................: 9600   5.13271/s
+
+    EXECUTION
+    iteration_duration.........: avg=17.09ms   min=14.23ms   med=16.79ms   max=41.36ms   p(90)=19.24ms   p(95)=20.11ms  
+    iterations.................: 2400   1.283177/s
+
+    NETWORK
+    data_received..............: 37 MB  20 kB/s
+    data_sent..................: 7.5 MB 4.0 kB/s
+
+
+  █ SCENARIO: generateChallenge_30 
+
+    checks_total.......: 7202    3.850601/s
+    checks_succeeded...: 100.00% 7202 out of 7202
+    checks_failed......: 0.00%   0 out of 7202
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+
+    CUSTOM
+    flow_duration..............: avg=13.452678 min=11.992068 med=13.220147 max=22.861216 p(90)=14.553427 p(95)=15.324497
+
+    HTTP
+    http_req_blocked...........: avg=5.94µs    min=1.07µs    med=2.23µs    max=295.54µs  p(90)=4.38µs    p(95)=5.68µs   
+    http_req_connecting........: avg=2.39µs    min=0s        med=0s        max=206.91µs  p(90)=0s        p(95)=0s       
+    http_req_duration..........: avg=3.79ms    min=253.5µs   med=956.27µs  max=18.88ms   p(90)=12.85ms   p(95)=13.41ms  
+    http_req_failed............: 0.00% 0 out of 14404
+    http_req_receiving.........: avg=48.64µs   min=15.73µs   med=42.37µs   max=5.17ms    p(90)=75.69µs   p(95)=84.15µs  
+    http_req_sending...........: avg=10.06µs   min=3.63µs    med=7.77µs    max=8.37ms    p(90)=14.23µs   p(95)=18.97µs  
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s        max=0s        p(90)=0s        p(95)=0s       
+    http_req_waiting...........: avg=3.73ms    min=230.11µs  med=885.17µs  max=18.8ms    p(90)=12.76ms   p(95)=13.32ms  
+    http_reqs..................: 14404 7.701203/s
+
+    EXECUTION
+    iteration_duration.........: avg=15.5ms    min=13.55ms   med=15.27ms   max=26.88ms   p(90)=16.84ms   p(95)=17.55ms  
+    iterations.................: 3601  1.925301/s
+
+    NETWORK
+    data_received..............: 55 MB 29 kB/s
+    data_sent..................: 11 MB 6.0 kB/s
+
+
+  █ SCENARIO: generateChallenge_40 
+
+    checks_total.......: 9602    5.133779/s
+    checks_succeeded...: 100.00% 9602 out of 9602
+    checks_failed......: 0.00%   0 out of 9602
+
+    ✓ Get client page status is 200
+    ✓ Get auth page status is 200
+
+    CUSTOM
+    flow_duration..............: avg=13.921528 min=11.814608 med=13.710166 max=21.926756 p(90)=15.433716 p(95)=16.115886
+
+    HTTP
+    http_req_blocked...........: avg=6.49µs    min=1.03µs    med=2.31µs    max=9.76ms    p(90)=4.47µs    p(95)=6.02µs   
+    http_req_connecting........: avg=2.89µs    min=0s        med=0s        max=9.73ms    p(90)=0s        p(95)=0s       
+    http_req_duration..........: avg=3.93ms    min=259.51µs  med=1.02ms    max=21.2ms    p(90)=13.34ms   p(95)=14.04ms  
+    http_req_failed............: 0.00% 0 out of 19204
+    http_req_receiving.........: avg=51.72µs   min=15.55µs   med=44.38µs   max=5.53ms    p(90)=80.22µs   p(95)=89.59µs  
+    http_req_sending...........: avg=9.86µs    min=3.64µs    med=8.17µs    max=158.31µs  p(90)=14.5µs    p(95)=19.36µs  
+    http_req_tls_handshaking...: avg=0s        min=0s        med=0s        max=0s        p(90)=0s        p(95)=0s       
+    http_req_waiting...........: avg=3.86ms    min=224.7µs   med=942.32µs  max=20.93ms   p(90)=13.26ms   p(95)=13.96ms  
+    http_reqs..................: 19204 10.267558/s
+
+    EXECUTION
+    iteration_duration.........: avg=16.04ms   min=13.34ms   med=15.8ms    max=26.45ms   p(90)=17.67ms   p(95)=18.42ms  
+    iterations.................: 4801  2.566889/s
+
+    NETWORK
+    data_received..............: 73 MB 39 kB/s
+    data_sent..................: 15 MB 8.0 kB/s
+
+
+  █ SCENARIO: metadata_1 
+
+    checks_total.......: 363     0.194081/s
+    checks_succeeded...: 100.00% 363 out of 363
+    checks_failed......: 0.00%   0 out of 363
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+
+    CUSTOM
+    flow_duration..............: avg=1.365961 min=0.96149  med=1.16475  max=14.552638 p(90)=1.59131  p(95)=1.87296 
+
+    HTTP
+    http_req_blocked...........: avg=212.7µs  min=143.81µs med=196.31µs max=793.62µs  p(90)=249.15µs p(95)=280.51µs
+    http_req_connecting........: avg=152.78µs min=96.74µs  med=143.47µs max=388.38µs  p(90)=188.89µs p(95)=205.11µs
+    http_req_duration..........: avg=1.36ms   min=961.49µs med=1.16ms   max=14.55ms   p(90)=1.59ms   p(95)=1.87ms  
+    http_req_failed............: 0.00%  0 out of 121
+    http_req_receiving.........: avg=55.74µs  min=36.4µs   med=51.63µs  max=263.98µs  p(90)=72.8µs   p(95)=81.26µs 
+    http_req_sending...........: avg=48.59µs  min=26.23µs  med=40.14µs  max=661.29µs  p(90)=57.35µs  p(95)=66.73µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s        p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=1.26ms   min=885µs    med=1.07ms   max=13.78ms   p(90)=1.48ms   p(95)=1.74ms  
+    http_reqs..................: 121    0.064694/s
+
+    EXECUTION
+    iteration_duration.........: avg=1.74ms   min=1.26ms   med=1.52ms   max=17.06ms   p(90)=2.1ms    p(95)=2.37ms  
+    iterations.................: 121    0.064694/s
+
+    NETWORK
+    data_received..............: 178 kB 95 B/s
+    data_sent..................: 17 kB  9.251174254523896 B/s
+
+
+  █ SCENARIO: metadata_10 
+
+    checks_total.......: 3603    1.92637/s
+    checks_succeeded...: 100.00% 3603 out of 3603
+    checks_failed......: 0.00%   0 out of 3603
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+
+    CUSTOM
+    flow_duration..............: avg=1.002518 min=0.47612  med=0.9435   max=15.242438 p(90)=1.261659 p(95)=1.46053
+
+    HTTP
+    http_req_blocked...........: avg=12µs     min=2.21µs   med=5µs      max=281.72µs  p(90)=8.54µs   p(95)=13.48µs
+    http_req_connecting........: avg=4.98µs   min=0s       med=0s       max=216.37µs  p(90)=0s       p(95)=0s     
+    http_req_duration..........: avg=1ms      min=476.12µs med=943.5µs  max=15.24ms   p(90)=1.26ms   p(95)=1.46ms 
+    http_req_failed............: 0.00%  0 out of 1201
+    http_req_receiving.........: avg=52.68µs  min=25.08µs  med=48.04µs  max=374.64µs  p(90)=72.19µs  p(95)=82.5µs 
+    http_req_sending...........: avg=17.95µs  min=6.77µs   med=16.01µs  max=91.46µs   p(90)=24.78µs  p(95)=33.77µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s        p(90)=0s       p(95)=0s     
+    http_req_waiting...........: avg=931.87µs min=439.21µs med=875.41µs max=15.11ms   p(90)=1.16ms   p(95)=1.34ms 
+    http_reqs..................: 1201   0.642123/s
+
+    EXECUTION
+    iteration_duration.........: avg=1.18ms   min=567.62µs med=1.11ms   max=15.76ms   p(90)=1.52ms   p(95)=1.74ms 
+    iterations.................: 1201   0.642123/s
+
+    NETWORK
+    data_received..............: 1.8 MB 945 B/s
+    data_sent..................: 172 kB 92 B/s
+
+
+  █ SCENARIO: metadata_20 
+
+    checks_total.......: 7203    3.851136/s
+    checks_succeeded...: 100.00% 7203 out of 7203
+    checks_failed......: 0.00%   0 out of 7203
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+
+    CUSTOM
+    flow_duration..............: avg=0.900903 min=0.43347  med=0.86124  max=12.904208 p(90)=1.09812 p(95)=1.21197
+
+    HTTP
+    http_req_blocked...........: avg=14.97µs  min=1.86µs   med=4.72µs   max=8.71ms    p(90)=7.33µs  p(95)=12.33µs
+    http_req_connecting........: avg=8.4µs    min=0s       med=0s       max=8.63ms    p(90)=0s      p(95)=0s     
+    http_req_duration..........: avg=900.9µs  min=433.47µs med=861.24µs max=12.9ms    p(90)=1.09ms  p(95)=1.21ms 
+    http_req_failed............: 0.00%  0 out of 2401
+    http_req_receiving.........: avg=48.46µs  min=22.08µs  med=44.26µs  max=204.69µs  p(90)=66.35µs p(95)=78.25µs
+    http_req_sending...........: avg=16.83µs  min=6.37µs   med=15.3µs   max=109.63µs  p(90)=22.78µs p(95)=29.53µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s        p(90)=0s      p(95)=0s     
+    http_req_waiting...........: avg=835.59µs min=388.34µs med=797.72µs max=12.72ms   p(90)=1.01ms  p(95)=1.11ms 
+    http_reqs..................: 2401   1.283712/s
+
+    EXECUTION
+    iteration_duration.........: avg=1.07ms   min=521.02µs med=1.02ms   max=13.35ms   p(90)=1.32ms  p(95)=1.49ms 
+    iterations.................: 2401   1.283712/s
+
+    NETWORK
+    data_received..............: 3.5 MB 1.9 kB/s
+    data_sent..................: 343 kB 184 B/s
+
+
+  █ SCENARIO: metadata_30 
+
+    checks_total.......: 10800   5.774298/s
+    checks_succeeded...: 100.00% 10800 out of 10800
+    checks_failed......: 0.00%   0 out of 10800
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+
+    CUSTOM
+    flow_duration..............: avg=0.95075  min=0.4152   med=0.92461  max=11.251248 p(90)=1.207048 p(95)=1.333523
+
+    HTTP
+    http_req_blocked...........: avg=12.14µs  min=2.05µs   med=5.2µs    max=464.1µs   p(90)=8.86µs   p(95)=14.92µs 
+    http_req_connecting........: avg=4.87µs   min=0s       med=0s       max=337.4µs   p(90)=0s       p(95)=0s      
+    http_req_duration..........: avg=950.75µs min=415.2µs  med=924.61µs max=11.25ms   p(90)=1.2ms    p(95)=1.33ms  
+    http_req_failed............: 0.00%  0 out of 3600
+    http_req_receiving.........: avg=55.68µs  min=24.74µs  med=50.74µs  max=2.75ms    p(90)=75.07µs  p(95)=84.98µs 
+    http_req_sending...........: avg=18.4µs   min=6.44µs   med=16.53µs  max=161.41µs  p(90)=25.26µs  p(95)=34.45µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s        p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=876.66µs min=369.75µs med=854.68µs max=11.15ms   p(90)=1.11ms   p(95)=1.23ms  
+    http_reqs..................: 3600   1.924766/s
+
+    EXECUTION
+    iteration_duration.........: avg=1.14ms   min=497.72µs med=1.11ms   max=11.63ms   p(90)=1.45ms   p(95)=1.59ms  
+    iterations.................: 3600   1.924766/s
+
+    NETWORK
+    data_received..............: 5.3 MB 2.8 kB/s
+    data_sent..................: 515 kB 275 B/s
+
+
+  █ SCENARIO: metadata_40 
+
+    checks_total.......: 14403   7.700668/s
+    checks_succeeded...: 100.00% 14403 out of 14403
+    checks_failed......: 0.00%   0 out of 14403
+
+    ✓ Get status is 200
+    ✓ Get Content-Type header
+    ✓ Get supported formats
+
+    CUSTOM
+    flow_duration..............: avg=0.86897  min=0.40715  med=0.8513  max=6.195249 p(90)=1.10074 p(95)=1.23682
+
+    HTTP
+    http_req_blocked...........: avg=14.26µs  min=1.81µs   med=4.85µs  max=12.13ms  p(90)=7.92µs  p(95)=12.71µs
+    http_req_connecting........: avg=7.37µs   min=0s       med=0s      max=12.08ms  p(90)=0s      p(95)=0s     
+    http_req_duration..........: avg=868.96µs min=407.15µs med=851.3µs max=6.19ms   p(90)=1.1ms   p(95)=1.23ms 
+    http_req_failed............: 0.00%  0 out of 4801
+    http_req_receiving.........: avg=52.29µs  min=21.39µs  med=47.53µs max=5.28ms   p(90)=70.05µs p(95)=80.47µs
+    http_req_sending...........: avg=17.48µs  min=5.45µs   med=15.62µs max=819.27µs p(90)=24.02µs p(95)=32.9µs 
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s     
+    http_req_waiting...........: avg=799.18µs min=373.05µs med=785.9µs max=4.57ms   p(90)=1.01ms  p(95)=1.14ms 
+    http_reqs..................: 4801   2.566889/s
+
+    EXECUTION
+    iteration_duration.........: avg=1.05ms   min=484.78µs med=1.01ms  max=13.16ms  p(90)=1.34ms  p(95)=1.52ms 
+    iterations.................: 4801   2.566889/s
+
+    NETWORK
+    data_received..............: 7.1 MB 3.8 kB/s
+    data_sent..................: 687 kB 367 B/s
+
+
+
+
+running (31m10.4s), 000/280 VUs, 36372 complete and 0 interrupted iterations
+metadata_1           ✓ [ 100% ] 00/10 VUs    2m0s  1.00 iters/s
+metadata_10          ✓ [ 100% ] 00/40 VUs    2m0s  10.00 iters/s
+metadata_20          ✓ [ 100% ] 00/80 VUs    2m0s  20.00 iters/s
+metadata_30          ✓ [ 100% ] 000/120 VUs  2m0s  30.00 iters/s
+metadata_40          ✓ [ 100% ] 000/160 VUs  2m0s  40.00 iters/s
+generateChallenge_1  ✓ [ 100% ] 00/10 VUs    2m0s  1.00 iters/s
+generateChallenge_10 ✓ [ 100% ] 00/40 VUs    2m0s  10.00 iters/s
+generateChallenge_20 ✓ [ 100% ] 00/80 VUs    2m0s  20.00 iters/s
+generateChallenge_30 ✓ [ 100% ] 000/120 VUs  2m0s  30.00 iters/s
+generateChallenge_40 ✓ [ 100% ] 000/160 VUs  2m0s  40.00 iters/s
+auth_1               ✓ [ 100% ] 00/10 VUs    2m0s  1.00 iters/s
+auth_10              ✓ [ 100% ] 00/40 VUs    2m0s  10.00 iters/s
+auth_20              ✓ [ 100% ] 00/80 VUs    2m0s  20.00 iters/s
+auth_30              ✓ [ 100% ] 000/120 VUs  2m0s  30.00 iters/s
+auth_40              ✓ [ 100% ] 000/160 VUs  2m0s  40.00 iters/s
